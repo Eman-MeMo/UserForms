@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD67B7C7-CE7A-44B8-B26D-B523BF91016F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browsing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browsing.Designer.cs">
+      <DependentUpon>Browsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>marketDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qauries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qauries.Designer.cs">
+      <DependentUpon>Qauries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCustomer_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCustomer_Admin.Designer.cs">
+      <DependentUpon>RemoveCustomer_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCustomer_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCustomer_Customer.Designer.cs">
+      <DependentUpon>RemoveCustomer_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveProduct.Designer.cs">
+      <DependentUpon>RemoveProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show1.Designer.cs">
+      <DependentUpon>Show1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show2.Designer.cs">
+      <DependentUpon>Show2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show3.Designer.cs">
+      <DependentUpon>Show3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shows.Designer.cs">
+      <DependentUpon>Shows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer_Admin.Designer.cs">
+      <DependentUpon>UpdateCustomer_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer_Customer.Designer.cs">
+      <DependentUpon>UpdateCustomer_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.Designer.cs">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browsing.resx">
+      <DependentUpon>Browsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Qauries.resx">
+      <DependentUpon>Qauries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCustomer_Admin.resx">
+      <DependentUpon>RemoveCustomer_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCustomer_Customer.resx">
+      <DependentUpon>RemoveCustomer_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveProduct.resx">
+      <DependentUpon>RemoveProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show1.resx">
+      <DependentUpon>Show1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show2.resx">
+      <DependentUpon>Show2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show3.resx">
+      <DependentUpon>Show3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shows.resx">
+      <DependentUpon>Shows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer_Admin.resx">
+      <DependentUpon>UpdateCustomer_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer_Customer.resx">
+      <DependentUpon>UpdateCustomer_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProduct.resx">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="marketDataSet.xsc">
+      <DependentUpon>marketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="marketDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>marketDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="marketDataSet.xss">
+      <DependentUpon>marketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
